@@ -51,7 +51,7 @@ include('../includes/header.php');
         <h4>Financeiro</h4>
         <hr>
 
-        <a href="#" class="d-block text-white mb-2">Dashboard</a>
+        <a href="index.php" class="d-block text-white mb-2">Dashboard</a>
         <a href="../transacoes/listar.php" class="d-block text-white mb-2">Transações</a>
 
         <hr>
