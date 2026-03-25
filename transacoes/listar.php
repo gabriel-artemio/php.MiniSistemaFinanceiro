@@ -47,22 +47,22 @@ include('../includes/header.php');
 
                     <td>
                         <?php if ($row['tipo'] == 'entrada') { ?>
-                            <span class="badge bg-success">Entrada</span>
+                            <span class="badge bg-success"><i class="bi bi-chevron-double-down"></i> Entrada</span>
                         <?php } else { ?>
-                            <span class="badge bg-danger">Saída</span>
+                            <span class="badge bg-danger"><i class="bi bi-chevron-double-up"></i> Saída</span>
                         <?php } ?>
                     </td>
 
                     <td>
                         <a href="editar.php?id=<?= $row['id'] ?>" 
                            class="btn btn-warning btn-sm">
-                           Editar
+                           Editar <i class="bi bi-pencil"></i>
                         </a>
 
                         <a href="excluir.php?id=<?= $row['id'] ?>" 
                            class="btn btn-danger btn-sm"
                            onclick="return confirm('Tem certeza que deseja excluir?')">
-                           Excluir
+                           Excluir <i class="bi bi-trash"></i>
                         </a>
                     </td>
                 </tr>
